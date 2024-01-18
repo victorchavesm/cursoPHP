@@ -22,7 +22,7 @@
         $v3 = 124.5;
         var_dump($v3);
 
-        $v4 = 3e2; // 3 x 10^2 -> float
+        $v4 = 3e2; // 3 x 10^2 -> float/double
         var_dump($v4);
 
         $v5 = (int) 3e2; // coerção p transformar em int
@@ -30,6 +30,16 @@
 
         $v6 = (int)"950";
         var_dump($v6);
+
+        $v7 = true; //true = 1 ; false = vazio
+        echo "O valor para casado é $v7";
+
+        $v8 = [1, 2, 3, 4, 5];
+        var_dump($v8);
+
+        $v9 = [1, 2.5, "Victor", -6, 13, true];
+        var_dump($v9);
+
     ?>
 </body>
 </html>
