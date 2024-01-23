@@ -30,14 +30,16 @@
 
     // nao pode usar aspas duplas dentro de aspas duplas
     // usar aspas duplas dentro de aspas simples não há interpretação da string como de padrão
-    // sequencia de escape para aspas duplas dentro de aspas duplas: 
+
+    
+    // sequencia de escape para aspas duplas dentro de aspas duplas: (talvez não funcione com HTML)
     // \n -> nova linha. quebra linha pra baixo
     // \t -> tabulação horizontal (o espaço que dá qdo aperta tab)
     // \\ -> mostrar barra invertida
     // \$ -> mostrar o cifrão
     // \u{} -> codepoint unicode
 
-
+ 
     $nom = "Rodrigo";
     $snom = "Nogueira";
     echo "$nom \"Minotauro\" $snom"

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teste de Formulário PHP</h1>
+    </header>
+    <section>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required minlength="1" maxlength="20" size="20" placeholder="seu nome aqui">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" required minlength="1" placeholder="seu sobrenome aqui">
+                <!-- current-password para o navegador buscar no navegador de senhas se tem alguma salva -->
+            </p>
+        
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </section>
+    
+</body>
+</html>
