@@ -17,8 +17,8 @@
         // $_POST
         // $_REQUEST -> junção $_GET + $_POST + $_COOKIES
 
-        $user = $_GET["nome"]; // se no index o method está get, aqui precisa estar tbm
-        $lastname = $_GET["sobrenome"];
+        $user = $_GET["nome"] ?? "empty"; // se no index o method está get, aqui precisa estar tbm
+        $lastname = $_GET["sobrenome"] ?? "empty";
         echo "<p>É um prazer te conhecer $user $lastname</p>"
         ?>
 
