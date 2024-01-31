@@ -10,7 +10,7 @@
     <main>
         <h1>Resultado Final</h1>
         <?php 
-        $numero = $_GET["numero"];
+        $numero = $_GET["numero"] ?? 0;
         $antecessor = $numero - 1;
         $sucessor = $numero + 1;
         echo("<p>O número escolhido foi <strong>$numero</strong></p>");
@@ -18,7 +18,7 @@
         echo("<p>O seu <em>sucessor</em> é $sucessor</p>");
         ?>
 
-    <a href="javascript:history.go(-1)"><button type="button">Voltar</button></a>
+    <button onclick="javascript:history.go(-1)" type="button">Voltar</button>
     </main>
 </body>
 </html>

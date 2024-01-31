@@ -9,9 +9,9 @@
 <body>
     <main>
         <h1>Trabalhando com números aleatórios</h1>
-        <p>Gerando um número aleatório entre 0 e 100..</p>
+        <p>Gerando um número aleatório entre 0 e 100... </p>
         <?php 
-        $random = rand(0,60);
+        $random = mt_rand(0,100); // random_int() gera números aleatórios criptograficamente seguros, porém é a função mais lenta
         echo("<p>O número gerado foi <strong>$random</strong></p>");
         ?>
 
