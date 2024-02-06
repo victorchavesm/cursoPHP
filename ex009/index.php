@@ -25,6 +25,10 @@
     </main>
     <section id="resultado">
         <h2>Resultado da soma</h2>
+        <?php 
+            $soma = $valor1 + $valor2;
+            echo "<p>A soma entre os valores $valor1 + $valor2 é <strong>$soma</strong></p>";
+        ?>
     </section>
 </body>
 </html>
