@@ -18,11 +18,15 @@
             <input type="number" name="dividendo" id="dividendo" value="<?=$valor1?>">
             <label for="divisor">Divisor</label>
             <input type="number" name="divisor" id="divisor" value="<?=$valor2?>">
-            <input type="submit" value="Somar">
+            <input type="submit" value="Dividir">
         </form>
     </main>
     <section>
         <h2>Estrutura da divisão</h2>
+
+        <?php 
+        
+        ?>
     </section>
 </body>
 </html>
